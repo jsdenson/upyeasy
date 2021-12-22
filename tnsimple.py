@@ -1,0 +1,8 @@
+# ping the telnet server
+import telnetlib
+
+con = telnetlib.Telnet('10.0.0.123')
+con.write(b'\r')
+res = con.read_until(b'\r\n>>>', 2)
+print(res)
+con.close()
