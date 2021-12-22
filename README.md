@@ -16,6 +16,7 @@
  - WiFi Access
  - GitHub Access
  - Some Python Programming Knowledge
+ - PyCharm Community Edition
 
 ### Simple Example
 
@@ -35,6 +36,8 @@
 1. Setup [WebRepl](https://docs.micropython.org/en/latest/esp32/quickref.html?highlight=webrepl#webrepl-web-browser-interactive-prompt)
 2. Send tnserver.py to device
 3. Send main.py to device
+4. Reboot device
+
 
 
     
