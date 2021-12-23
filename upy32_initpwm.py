@@ -24,8 +24,6 @@ Duty should depend largely on servo center adjustment.
 p1 = PWM(Pin(25),freq=500,duty=760)
 p2 = PWM(Pin(26),freq=500,duty=770)
 
-p1.deinit()
-p2.deinit()
 
 
 

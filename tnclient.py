@@ -1,5 +1,6 @@
 import sys
 import telnetlib as tn
+import time
 
 CTLE = b'\5'
 CTLD = b'\4'
@@ -27,7 +28,12 @@ def run(ipaddr, pyfile, port=23):
 
     tcon.write(CTLE)
     program = program.replace('\n', '\r')
-    tcon.write(str(program).encode('utf-8'))
+    #tcon.write(str(program).encode('utf-8'))
+    plist = program.split('\r')
+    for line in plist:
+        tcon.write(str(line+'\r').encode('utf-8'))
+        time.sleep(.1)
+
     tcon.write(CTLD)
 
     rbytes = tcon.read_until(b'>>>', 4)
