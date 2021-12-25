@@ -1,6 +1,6 @@
+# this is micropython code. upy errors are expected in pycharm
 from machine import ADC, Pin, PWM, Timer
 import time
-
 
 class bot:
 
