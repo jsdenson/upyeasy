@@ -1,14 +1,14 @@
 
-# Micropython Easy-uPy
+# Micropython uPyEasy
 - A methodology for programming and controlling WiFi enabled devices remotely in Pycharm.
 
 ### Enhances the WebRepl Experience
- - Fast prototyping projects without manual WebRepl uploads
  - Telnet client/server based REPL
- - Python automates copy/paste of upy code to device
+ - REPL remote control from desktop, phone, or tablet
+ - Python can automate copy/paste of upy code to device
+ - Fast prototyping small projects without  WebRepl uploads
  - Use WebRepl file upload only when saving code to device
- - Pycharm/IDE integration and project management 
- - Easy code storage and maintenance with github
+ - Pycharm/IDE integration (github/syntax/debug) 
  - Programming examples taylored for Huzzah Feather ESP32
 
 ### Requirements

@@ -32,7 +32,7 @@ def run(ipaddr, pyfile, port=23):
     plist = program.split('\r')
     for line in plist:
         tcon.write(str(line+'\r').encode('utf-8'))
-        time.sleep(.1)
+        time.sleep(0.1)
 
     tcon.write(CTLD)
 
