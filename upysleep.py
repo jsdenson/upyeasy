@@ -1,0 +1,12 @@
+# make upy device sleep
+import telnetlib
+
+if __name__ == '__main__':
+
+    con = telnetlib.Telnet('10.0.0.123')
+    con.write(b'\r')
+    res = con.read_until(b'\r\n>>>', 2)
+    print(res)
+    con.write(b'import machine\r')
+    con.write(b'machine.deepsleep()\r')
+    con.close()
