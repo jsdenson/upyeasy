@@ -46,6 +46,7 @@ def run(ipaddr, pyfile, port=23):
             olen = len(OUTD)
             print(tk[olen:])
 
+    time.sleep(0.1) # print/close race ?
     tcon.close()
 
 if __name__ == '__main__':

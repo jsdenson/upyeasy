@@ -38,16 +38,20 @@ if not wlan.isconnected():
 
 print(wlan.ifconfig())  # get the interface's IP/netmask/gw/DNS addresses
 
+from upysh import *
+
+'''
+import webrepl
+webrepl.start()
+'''
+
 import tnserver
 
 # uncomment the line below to start telnet server at boot once you're ready
 ## Important! Once you do this, Turn off with tndisable.py
 
-tnserver.stop()
+#tnserver.stop()
 tnserver.start()
-
-import webrepl
-webrepl.start()
 
 '''
 # tndisable.py example
